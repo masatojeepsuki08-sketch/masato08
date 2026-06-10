@@ -1,509 +1,174 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>〇〇商店 | 信頼の古物商</title>
-
-  <!-- SEO -->
-  <meta name="description" content="地域に根ざした信頼の古物商サービスを提供しています。安心・誠実な取引をお約束します。古物商許可番号：第000000000000号（東京都公安委員会）" />
-
-  <!-- OGP（完全実装） -->
-  <meta property="og:title"       content="〇〇商店 | 信頼の古物商" />
-  <meta property="og:description" content="地域に根ざした信頼の古物商サービスを提供しています。安心・誠実な取引をお約束します。" />
-  <meta property="og:image"       content="https://yourdomain.com/ogp.jpg" />
-  <meta property="og:url"         content="https://yourdomain.com/" />
-  <meta property="og:type"        content="website" />
-  <meta property="og:site_name"   content="〇〇商店" />
-  <meta name="twitter:card"       content="summary_large_image" />
-  <meta name="twitter:title"      content="〇〇商店 | 信頼の古物商" />
-  <meta name="twitter:description" content="地域に根ざした信頼の古物商サービスを提供しています。安心・誠実な取引をお約束します。" />
-  <meta name="twitter:image"      content="https://yourdomain.com/ogp.jpg" />
-
-  <!-- Tailwind CSS CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;600&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet" />
-
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            navy:     '#1a2744',
-            navyDark: '#111a30',
-            gold:     '#b8972a',
-            goldLight:'#d4af4a',
-            cream:    '#f7f4ef',
-            ink:      '#2c2c2c',
-            muted:    '#6b6b6b',
-          },
-          fontFamily: {
-            serif: ['"Noto Serif JP"', 'serif'],
-            sans:  ['"Noto Sans JP"', 'sans-serif'],
-          },
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>高価買取えびすや | 催事買取・出張買取・フランチャイズ募集</title>
+    <meta name="description" content="高価買取えびすや - 株式会社Ritaが運営する信頼の買取サービス。催事買取、出張買取、フランチャイズ募集を実施中。お客様との信頼を大切に、誠実な査定と丁寧な対応をお約束します。">
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
         }
-      }
-    }
-  </script>
-
-  <style>
-    body { font-family: 'Noto Sans JP', sans-serif; color: #2c2c2c; background: #fff; }
-    h1, h2, h3, .font-serif { font-family: 'Noto Serif JP', serif; }
-
-    /* 金の装飾ライン */
-    .gold-rule { display: flex; align-items: center; gap: 0.75rem; }
-    .gold-rule::before,
-    .gold-rule::after {
-      content: '';
-      flex: 1;
-      height: 1px;
-      background: linear-gradient(to right, transparent, #b8972a, transparent);
-    }
-
-    /* 菱形の装飾 */
-    .diamond-dec {
-      display: inline-block;
-      width: 8px; height: 8px;
-      background: #b8972a;
-      transform: rotate(45deg);
-    }
-
-    /* ヘッダートップボーダー */
-    .header-top-border {
-      height: 3px;
-      background: linear-gradient(to right, #b8972a, #d4af4a, #b8972a);
-    }
-
-    /* セクションタイトル下線 */
-    .section-title-underline {
-      position: relative;
-      display: inline-block;
-      padding-bottom: 0.75rem;
-    }
-    .section-title-underline::after {
-      content: '';
-      position: absolute;
-      bottom: 0; left: 50%;
-      transform: translateX(-50%);
-      width: 2.5rem; height: 2px;
-      background: #b8972a;
-    }
-
-    /* 縦書きキャッチ */
-    .catch-vertical { writing-mode: vertical-rl; letter-spacing: 0.2em; }
-
-    /* フォームフォーカス */
-    input:focus, textarea:focus, select:focus {
-      outline: none;
-      border-color: #b8972a;
-      box-shadow: 0 0 0 2px rgba(184,151,42,0.15);
-    }
-
-    /* スムーズスクロール */
-    html { scroll-behavior: smooth; }
-
-    /* モバイルメニューアニメーション */
-    #mobile-menu { transition: max-height 0.3s ease, opacity 0.3s ease; }
-  </style>
+        header {
+            background: linear-gradient(135deg, #c8102e, #8b0000);
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+        .logo {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+        nav {
+            background: #333;
+            padding: 1rem;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        nav ul li {
+            margin: 0 1rem;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        main {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        section {
+            margin-bottom: 3rem;
+        }
+        h1, h2, h3 {
+            color: #c8102e;
+        }
+        .catch-copy {
+            font-size: 1.8rem;
+            text-align: center;
+            margin: 2rem 0;
+            padding: 2rem;
+            background: #f9f9f9;
+            border-radius: 8px;
+        }
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        .card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+            margin-top: 3rem;
+        }
+        .contact-notice {
+            background: #fff3cd;
+            border: 1px solid #ffeeba;
+            color: #856404;
+            padding: 1.5rem;
+            text-align: center;
+            border-radius: 8px;
+            margin: 2rem 0;
+        }
+    </style>
 </head>
-<body class="bg-white text-ink">
+<body>
+    <header>
+        <div class="logo">高価買取えびすや</div>
+        <p>株式会社Rita 運営</p>
+    </header>
 
-<!-- ============================================================
-     HEADER
-============================================================ -->
-<header class="sticky top-0 z-50 bg-navy shadow-md">
-  <div class="header-top-border"></div>
-  <div class="max-w-5xl mx-auto px-4">
-    <div class="flex items-center justify-between h-16">
-
-      <!-- ロゴ -->
-      <a href="#" class="flex items-center gap-2" aria-label="〇〇商店 トップへ">
-        <span class="diamond-dec" aria-hidden="true"></span>
-        <span class="font-serif text-xl font-semibold text-white tracking-widest">〇〇商店</span>
-        <span class="diamond-dec" aria-hidden="true"></span>
-      </a>
-
-      <!-- PC ナビ -->
-      <nav class="hidden md:flex items-center gap-8 text-sm text-white/80" aria-label="メインナビゲーション">
-        <a href="#about"   class="hover:text-goldLight transition-colors duration-200 tracking-wider">会社概要</a>
-        <a href="#license" class="hover:text-goldLight transition-colors duration-200 tracking-wider">古物商許可</a>
-        <a href="#legal"   class="hover:text-goldLight transition-colors duration-200 tracking-wider">特商法</a>
-        <a href="#contact" class="hover:text-goldLight transition-colors duration-200 tracking-wider border border-gold/60 px-4 py-1 rounded hover:border-goldLight">お問い合わせ</a>
-      </nav>
-
-      <!-- ハンバーガーボタン -->
-      <button id="menu-btn"
-              class="md:hidden text-white p-1 focus:outline-none focus:ring-2 focus:ring-gold/60 rounded"
-              aria-label="メニューを開く"
-              aria-expanded="false"
-              aria-controls="mobile-menu">
-        <svg id="icon-open"  class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-        </svg>
-        <svg id="icon-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
-        </svg>
-      </button>
-    </div>
-
-    <!-- モバイルメニュー -->
-    <nav id="mobile-menu"
-         class="md:hidden overflow-hidden max-h-0 opacity-0"
-         aria-label="モバイルナビゲーション">
-      <div class="pb-4 flex flex-col gap-1 text-sm text-white/80 border-t border-white/10 pt-3">
-        <a href="#about"   onclick="closeMenu()" class="hover:text-goldLight hover:bg-white/5 px-2 py-2.5 tracking-wider rounded transition-colors">会社概要</a>
-        <a href="#license" onclick="closeMenu()" class="hover:text-goldLight hover:bg-white/5 px-2 py-2.5 tracking-wider rounded transition-colors">古物商許可</a>
-        <a href="#legal"   onclick="closeMenu()" class="hover:text-goldLight hover:bg-white/5 px-2 py-2.5 tracking-wider rounded transition-colors">特商法</a>
-        <a href="#contact" onclick="closeMenu()" class="hover:text-goldLight hover:bg-white/5 px-2 py-2.5 tracking-wider rounded transition-colors">お問い合わせ</a>
-      </div>
+    <nav>
+        <ul>
+            <li><a href="#about">会社概要</a></li>
+            <li><a href="#service">事業内容</a></li>
+            <li><a href="#contact">お問い合わせ</a></li>
+        </ul>
     </nav>
-  </div>
-</header>
 
+    <main>
+        <!-- キャッチコピー -->
+        <section id="hero" class="catch-copy">
+            <h1>高価買取えびすや</h1>
+            <p>催事買取・出張買取・フランチャイズ募集</p>
+            <p>お客様との信頼を大切にし、<br>
+            誠実な査定と丁寧な対応を心掛けています。</p>
+            <p>株式会社Ritaが運営する買取サービスとして、<br>
+            地域のお客様に安心してご利用いただける査定を目指しております。</p>
+        </section>
 
-<!-- ============================================================
-     MAIN VISUAL（ヒーロー）
-============================================================ -->
-<section class="relative bg-navyDark overflow-hidden" aria-label="メインビジュアル">
-  <!-- 背景テクスチャ（装飾） -->
-  <div class="absolute inset-0 opacity-20" aria-hidden="true"
-       style="background-image: repeating-linear-gradient(90deg, #b8972a 0px, #b8972a 1px, transparent 1px, transparent 60px);"></div>
+        <!-- 会社概要 -->
+        <section id="about">
+            <h2>会社概要</h2>
+            <div class="info-grid">
+                <div class="card">
+                    <h3>屋号</h3>
+                    <p>高価買取えびすや</p>
+                </div>
+                <div class="card">
+                    <h3>運営会社</h3>
+                    <p>株式会社Rita</p>
+                </div>
+                <div class="card">
+                    <h3>所在地</h3>
+                    <p>〒530-0001<br>
+                    大阪府大阪市北区梅田1-1-3<br>
+                    大阪駅前第3ビル29階1-1-1号室</p>
+                </div>
+                <div class="card">
+                    <h3>古物商許可</h3>
+                    <p>現在取得手続中</p>
+                </div>
+            </div>
+        </section>
 
-  <div class="relative max-w-5xl mx-auto px-4 py-24 md:py-36 flex flex-col md:flex-row items-center gap-10">
+        <!-- 事業内容 -->
+        <section id="service">
+            <h2>事業内容</h2>
+            <ul>
+                <li>買取事業</li>
+                <li>催事買取</li>
+                <li>フランチャイズ募集</li>
+            </ul>
+        </section>
 
-    <!-- テキスト -->
-    <div class="flex-1 text-center md:text-left">
-      <p class="text-gold text-xs tracking-[0.4em] mb-4 font-sans uppercase">Antique Dealer</p>
-      <h1 class="font-serif text-white text-4xl md:text-5xl leading-snug tracking-widest mb-6">
-        誠実な取引で、<br class="md:hidden"/>価値をつなぐ。
-      </h1>
-      <p class="text-white/60 text-sm md:text-base leading-relaxed mb-8 max-w-md mx-auto md:mx-0">
-        〇〇商店は、お客様との信頼を第一に、大切なお品の買取・販売を丁寧に行っております。
-      </p>
-      <a href="#contact"
-         class="inline-block bg-gold hover:bg-goldLight text-white font-sans text-sm tracking-widest px-8 py-3 transition-colors duration-200">
-        お問い合わせ
-      </a>
-    </div>
+        <!-- お問い合わせ -->
+        <section id="contact">
+            <h2>お問い合わせ</h2>
+            <div class="contact-notice">
+                <p><strong>お問い合わせ方法は現在準備中です</strong></p>
+                <p>電話番号：現在準備中<br>
+                メールアドレス：現在準備中</p>
+                <p>後日、LINEまたはGoogleフォームを設置予定です。</p>
+            </div>
+        </section>
+    </main>
 
-    <!-- 縦書きキャッチ（装飾） -->
-    <div class="hidden md:flex items-center gap-4 text-white/20 select-none" aria-hidden="true">
-      <span class="catch-vertical font-serif text-6xl tracking-[0.3em] leading-none">誠信</span>
-      <div class="h-48 w-px bg-gradient-to-b from-transparent via-gold/40 to-transparent"></div>
-      <span class="catch-vertical font-serif text-6xl tracking-[0.3em] leading-none">誠実</span>
-    </div>
-  </div>
-
-  <div class="header-top-border" aria-hidden="true"></div>
-</section>
-
-
-<!-- ============================================================
-     会社概要
-============================================================ -->
-<section id="about" class="bg-cream py-20">
-  <div class="max-w-3xl mx-auto px-4">
-
-    <div class="gold-rule mb-2" aria-hidden="true"><span class="diamond-dec"></span></div>
-    <h2 class="font-serif text-center text-2xl md:text-3xl tracking-widest text-navy mb-1 section-title-underline">
-      会社概要
-    </h2>
-    <p class="text-center text-xs text-muted tracking-[0.3em] mt-4 mb-12">COMPANY PROFILE</p>
-
-    <div class="bg-white border border-gold/20 shadow-sm overflow-hidden">
-      <table class="w-full text-sm" role="table" aria-label="会社概要">
-        <tbody>
-          <tr class="border-b border-gray-100">
-            <th scope="row" class="bg-navy/5 text-navy font-sans font-medium text-left px-5 py-4 w-1/3 tracking-wider whitespace-nowrap">屋号</th>
-            <td class="px-5 py-4 text-ink">〇〇商店</td>
-          </tr>
-          <tr class="border-b border-gray-100">
-            <th scope="row" class="bg-navy/5 text-navy font-sans font-medium text-left px-5 py-4 tracking-wider whitespace-nowrap">事業内容</th>
-            <td class="px-5 py-4 text-ink">古物の買取・販売</td>
-          </tr>
-          <tr class="border-b border-gray-100">
-            <th scope="row" class="bg-navy/5 text-navy font-sans font-medium text-left px-5 py-4 tracking-wider whitespace-nowrap">会社概要</th>
-            <td class="px-5 py-4 text-ink leading-relaxed">会社概要テキストが入ります。誠実な取引と丁寧な対応を心がけ、お客様の大切なお品を責任を持ってお取り扱いいたします。</td>
-          </tr>
-          <tr class="border-b border-gray-100">
-            <th scope="row" class="bg-navy/5 text-navy font-sans font-medium text-left px-5 py-4 tracking-wider whitespace-nowrap">電話番号</th>
-            <td class="px-5 py-4 text-ink">
-              <a href="tel:000-0000-0000" class="text-navy hover:text-gold transition-colors">000-0000-0000</a>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row" class="bg-navy/5 text-navy font-sans font-medium text-left px-5 py-4 tracking-wider whitespace-nowrap">メール</th>
-            <td class="px-5 py-4 text-ink">
-              <a href="mailto:sample@example.com" class="text-navy hover:text-gold transition-colors break-all">sample@example.com</a>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-</section>
-
-
-<!-- ============================================================
-     古物商許可番号
-============================================================ -->
-<section id="license" class="bg-white py-20">
-  <div class="max-w-3xl mx-auto px-4">
-
-    <div class="gold-rule mb-2" aria-hidden="true"><span class="diamond-dec"></span></div>
-    <h2 class="font-serif text-center text-2xl md:text-3xl tracking-widest text-navy mb-1 section-title-underline">
-      古物商許可番号
-    </h2>
-    <p class="text-center text-xs text-muted tracking-[0.3em] mt-4 mb-12">LICENSE</p>
-
-    <!-- 許可番号カード -->
-    <div class="border border-gold/40 bg-cream p-8 md:p-12 text-center relative overflow-hidden" role="region" aria-label="古物商許可証情報">
-      <!-- 四隅の装飾 -->
-      <span class="absolute top-3 left-3 w-4 h-4 border-t-2 border-l-2 border-gold/50" aria-hidden="true"></span>
-      <span class="absolute top-3 right-3 w-4 h-4 border-t-2 border-r-2 border-gold/50" aria-hidden="true"></span>
-      <span class="absolute bottom-3 left-3 w-4 h-4 border-b-2 border-l-2 border-gold/50" aria-hidden="true"></span>
-      <span class="absolute bottom-3 right-3 w-4 h-4 border-b-2 border-r-2 border-gold/50" aria-hidden="true"></span>
-
-      <p class="text-muted text-xs tracking-[0.3em] mb-3">古物商許可番号</p>
-      <p class="font-serif text-navy text-2xl md:text-3xl tracking-widest font-semibold mb-3">
-        第000000000000号
-      </p>
-      <!-- ① 公安委員会名を明記 -->
-      <p class="text-gold text-sm font-sans tracking-wider mb-4">東京都公安委員会</p>
-      <div class="w-12 h-px bg-gold/50 mx-auto mb-4" aria-hidden="true"></div>
-      <p class="text-muted text-xs leading-relaxed">
-        当店は古物営業法に基づき、正式な許可を受けた古物商です。<br/>
-        安心してお取引いただけます。
-      </p>
-    </div>
-  </div>
-</section>
-
-
-<!-- ============================================================
-     お問い合わせフォーム
-============================================================ -->
-<section id="contact" class="bg-navy py-20">
-  <div class="header-top-border" aria-hidden="true"></div>
-  <div class="max-w-2xl mx-auto px-4 pt-12">
-
-    <div class="gold-rule mb-2" aria-hidden="true"><span class="diamond-dec"></span></div>
-    <h2 class="font-serif text-center text-2xl md:text-3xl tracking-widest text-white mb-1 section-title-underline">
-      お問い合わせ
-    </h2>
-    <p class="text-center text-xs text-gold/70 tracking-[0.3em] mt-4 mb-10">CONTACT</p>
-
-    <form id="contact-form" class="space-y-5" onsubmit="handleSubmit(event)" novalidate aria-label="お問い合わせフォーム">
-
-      <div>
-        <label for="f-name" class="block text-white/70 text-xs tracking-widest mb-1.5">お名前 <span class="text-gold" aria-label="必須">*</span></label>
-        <input id="f-name" type="text" name="name" required autocomplete="name" placeholder="山田 太郎"
-               class="w-full bg-white/5 border border-white/20 text-white placeholder-white/30 px-4 py-3 text-sm transition-all duration-200" />
-      </div>
-
-      <div>
-        <label for="f-email" class="block text-white/70 text-xs tracking-widest mb-1.5">メールアドレス <span class="text-gold" aria-label="必須">*</span></label>
-        <input id="f-email" type="email" name="email" required autocomplete="email" placeholder="sample@example.com"
-               class="w-full bg-white/5 border border-white/20 text-white placeholder-white/30 px-4 py-3 text-sm transition-all duration-200" />
-      </div>
-
-      <div>
-        <label for="f-tel" class="block text-white/70 text-xs tracking-widest mb-1.5">電話番号</label>
-        <input id="f-tel" type="tel" name="tel" autocomplete="tel" placeholder="000-0000-0000"
-               class="w-full bg-white/5 border border-white/20 text-white placeholder-white/30 px-4 py-3 text-sm transition-all duration-200" />
-      </div>
-
-      <div>
-        <label for="f-type" class="block text-white/70 text-xs tracking-widest mb-1.5">お問い合わせ種別</label>
-        <select id="f-type" name="type"
-                class="w-full bg-navy border border-white/20 text-white/80 px-4 py-3 text-sm transition-all duration-200 appearance-none cursor-pointer">
-          <option value="">選択してください</option>
-          <option value="buy">買取について</option>
-          <option value="sell">購入について</option>
-          <option value="other">その他</option>
-        </select>
-      </div>
-
-      <div>
-        <label for="f-message" class="block text-white/70 text-xs tracking-widest mb-1.5">お問い合わせ内容 <span class="text-gold" aria-label="必須">*</span></label>
-        <textarea id="f-message" name="message" required rows="5" placeholder="お気軽にご記入ください"
-                  class="w-full bg-white/5 border border-white/20 text-white placeholder-white/30 px-4 py-3 text-sm transition-all duration-200 resize-none"></textarea>
-      </div>
-
-      <div class="pt-2">
-        <button type="submit"
-                class="w-full bg-gold hover:bg-goldLight text-white font-sans text-sm tracking-widest py-4 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-goldLight">
-          送信する
-        </button>
-      </div>
-    </form>
-
-    <!-- 送信後メッセージ -->
-    <div id="form-message" class="hidden mt-6 border border-gold/50 bg-gold/10 px-6 py-5 text-center" role="alert" aria-live="polite">
-      <p class="text-gold text-sm tracking-wider font-serif">現在お問い合わせは準備中です</p>
-      <p class="text-white/50 text-xs mt-2">近日中に受付を開始いたします。しばらくお待ちください。</p>
-    </div>
-
-    <!-- 直接連絡先 -->
-    <div class="mt-10 pt-8 border-t border-white/10 text-center space-y-2">
-      <p class="text-white/40 text-xs tracking-widest mb-4">直接のお問い合わせ</p>
-      <a href="tel:000-0000-0000" class="flex items-center justify-center gap-2 text-white/70 hover:text-goldLight text-sm transition-colors">
-        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
-        <span>000-0000-0000</span>
-      </a>
-      <a href="mailto:sample@example.com" class="flex items-center justify-center gap-2 text-white/70 hover:text-goldLight text-sm transition-colors break-all">
-        <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
-        <span>sample@example.com</span>
-      </a>
-    </div>
-  </div>
-</section>
-
-
-<!-- ============================================================
-     特定商取引法に基づく表記
-============================================================ -->
-<section id="legal" class="bg-cream py-16">
-  <div class="max-w-3xl mx-auto px-4">
-
-    <div class="gold-rule mb-2" aria-hidden="true"><span class="diamond-dec"></span></div>
-    <h2 class="font-serif text-center text-xl md:text-2xl tracking-widest text-navy mb-1 section-title-underline">
-      特定商取引法に基づく表記
-    </h2>
-    <p class="text-center text-xs text-muted tracking-[0.3em] mt-4 mb-10">LEGAL NOTICE</p>
-
-    <div class="bg-white border border-gold/20 shadow-sm overflow-hidden">
-      <table class="w-full text-sm" role="table" aria-label="特定商取引法に基づく表記">
-        <tbody>
-          <tr class="border-b border-gray-100">
-            <th scope="row" class="bg-navy/5 text-navy font-sans font-medium text-left px-5 py-4 w-1/3 tracking-wider whitespace-nowrap">事業者名</th>
-            <td class="px-5 py-4 text-ink">〇〇商店</td>
-          </tr>
-          <tr class="border-b border-gray-100">
-            <th scope="row" class="bg-navy/5 text-navy font-sans font-medium text-left px-5 py-4 tracking-wider whitespace-nowrap">代表者名</th>
-            <td class="px-5 py-4 text-ink">〇〇 〇〇</td>
-          </tr>
-          <tr class="border-b border-gray-100">
-            <th scope="row" class="bg-navy/5 text-navy font-sans font-medium text-left px-5 py-4 tracking-wider whitespace-nowrap">所在地</th>
-            <td class="px-5 py-4 text-ink">東京都〇〇区〇〇1-2-3</td>
-          </tr>
-          <tr class="border-b border-gray-100">
-            <th scope="row" class="bg-navy/5 text-navy font-sans font-medium text-left px-5 py-4 tracking-wider whitespace-nowrap">電話番号</th>
-            <td class="px-5 py-4 text-ink">
-              <a href="tel:000-0000-0000" class="text-navy hover:text-gold transition-colors">000-0000-0000</a>
-            </td>
-          </tr>
-          <tr class="border-b border-gray-100">
-            <th scope="row" class="bg-navy/5 text-navy font-sans font-medium text-left px-5 py-4 tracking-wider whitespace-nowrap">メールアドレス</th>
-            <td class="px-5 py-4 text-ink">
-              <a href="mailto:sample@example.com" class="text-navy hover:text-gold transition-colors break-all">sample@example.com</a>
-            </td>
-          </tr>
-          <tr class="border-b border-gray-100">
-            <th scope="row" class="bg-navy/5 text-navy font-sans font-medium text-left px-5 py-4 tracking-wider whitespace-nowrap">販売価格</th>
-            <td class="px-5 py-4 text-ink">各商品ページに表示する価格（税込）</td>
-          </tr>
-          <tr class="border-b border-gray-100">
-            <th scope="row" class="bg-navy/5 text-navy font-sans font-medium text-left px-5 py-4 tracking-wider whitespace-nowrap">支払方法</th>
-            <td class="px-5 py-4 text-ink">現金・振込（詳細はお問い合わせください）</td>
-          </tr>
-          <tr class="border-b border-gray-100">
-            <th scope="row" class="bg-navy/5 text-navy font-sans font-medium text-left px-5 py-4 tracking-wider whitespace-nowrap">返品・交換</th>
-            <td class="px-5 py-4 text-ink">商品到着後7日以内、未使用かつ元の状態の場合に限り対応いたします。</td>
-          </tr>
-          <tr>
-            <th scope="row" class="bg-navy/5 text-navy font-sans font-medium text-left px-5 py-4 tracking-wider whitespace-nowrap">古物商許可番号</th>
-            <td class="px-5 py-4 text-ink">第000000000000号（東京都公安委員会）</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-</section>
-
-
-<!-- ============================================================
-     FOOTER
-============================================================ -->
-<footer class="bg-navyDark text-white/40 text-xs">
-  <div class="header-top-border opacity-60" aria-hidden="true"></div>
-  <div class="max-w-5xl mx-auto px-4 py-8 flex flex-col md:flex-row items-center justify-between gap-4">
-
-    <div class="flex items-center gap-2">
-      <span class="diamond-dec" style="width:6px;height:6px;background:#b8972a;" aria-hidden="true"></span>
-      <span class="font-serif text-white/60 tracking-widest">〇〇商店</span>
-    </div>
-
-    <div class="text-center space-y-1">
-      <p class="tracking-wider">古物商許可番号：第000000000000号（東京都公安委員会）</p>
-      <p>&copy; 2025 〇〇商店. All rights reserved.</p>
-    </div>
-
-    <nav class="flex flex-wrap justify-center gap-5 text-white/40" aria-label="フッターナビゲーション">
-      <a href="#about"   class="hover:text-goldLight transition-colors tracking-wider">会社概要</a>
-      <a href="#license" class="hover:text-goldLight transition-colors tracking-wider">古物商許可</a>
-      <a href="#legal"   class="hover:text-goldLight transition-colors tracking-wider">特商法</a>
-      <a href="#contact" class="hover:text-goldLight transition-colors tracking-wider">お問い合わせ</a>
-    </nav>
-  </div>
-</footer>
-
-
-<!-- ============================================================
-     JavaScript
-============================================================ -->
-<script>
-  // ─── ハンバーガーメニュー ───────────────────────────
-  const menuBtn    = document.getElementById('menu-btn');
-  const mobileMenu = document.getElementById('mobile-menu');
-  const iconOpen   = document.getElementById('icon-open');
-  const iconClose  = document.getElementById('icon-close');
-  let menuOpen = false;
-
-  function openMenu() {
-    menuOpen = true;
-    mobileMenu.style.maxHeight = mobileMenu.scrollHeight + 'px';
-    mobileMenu.style.opacity   = '1';
-    iconOpen.classList.add('hidden');
-    iconClose.classList.remove('hidden');
-    menuBtn.setAttribute('aria-expanded', 'true');
-    menuBtn.setAttribute('aria-label', 'メニューを閉じる');
-  }
-
-  function closeMenu() {
-    menuOpen = false;
-    mobileMenu.style.maxHeight = '0';
-    mobileMenu.style.opacity   = '0';
-    iconOpen.classList.remove('hidden');
-    iconClose.classList.add('hidden');
-    menuBtn.setAttribute('aria-expanded', 'false');
-    menuBtn.setAttribute('aria-label', 'メニューを開く');
-  }
-
-  menuBtn.addEventListener('click', () => {
-    menuOpen ? closeMenu() : openMenu();
-  });
-
-  // ウィンドウリサイズ時にメニューをリセット
-  window.addEventListener('resize', () => {
-    if (window.innerWidth >= 768 && menuOpen) closeMenu();
-  });
-
-  // ─── フォーム送信 ───────────────────────────────────
-  function handleSubmit(e) {
-    e.preventDefault();
-    const form = document.getElementById('contact-form');
-    const msg  = document.getElementById('form-message');
-    form.style.opacity       = '0.4';
-    form.style.pointerEvents = 'none';
-    msg.classList.remove('hidden');
-    msg.scrollIntoView({ behavior: 'smooth', block: 'center' });
-  }
-</script>
-
+    <footer>
+        <p>&copy; 株式会社Rita 高価買取えびすや All Rights Reserved.</p>
+        <p>古物商許可：現在取得手続中</p>
+    </footer>
 </body>
 </html>
+
+
+一度問題がないかの確認をしてください。
