@@ -1,6 +1,156 @@
-        <!-- Heroセクション -->
-        <section id="hero" style="background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); padding: 70px 20px 60px; position: relative; overflow: hidden;">
+```html
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>高価買取えびすや | 株式会社Rita</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, 'Hiragino Sans', 'Meiryo', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(135deg, #c8102e, #8b0000);
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+        .logo {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+        nav {
+            background: #333;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        main {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        section {
+            margin-bottom: 4rem;
+            scroll-margin-top: 90px;
+        }
+        h1, h2, h3 {
+            color: #c8102e;
+        }
+
+        /* スムーズスクロール */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Heroボタン */
+        .hero-btn {
+            display: inline-block;
+            padding: 18px 52px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.3rem;
+            transition: all 0.3s;
+            margin: 0 10px;
+        }
+        .hero-btn-primary {
+            background: #c8102e;
+            color: white;
+            box-shadow: 0 10px 30px rgba(200, 16, 46, 0.35);
+        }
+        .hero-btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 35px rgba(200, 16, 46, 0.5);
+        }
+        .hero-btn-outline {
+            background: transparent;
+            color: #c8102e;
+            border: 2.5px solid #c8102e;
+        }
+
+        /* カード */
+        .service-card {
+            background: white;
+            border-radius: 12px;
+            padding: 28px 20px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .service-card:hover {
+            transform: translateY(-8px);
+        }
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+        }
+
+        /* お問い合わせ */
+        .contact-box {
+            background: #f8f9fa;
+            border: 2px solid #c8102e;
+            border-radius: 12px;
+            padding: 40px 30px;
+            text-align: center;
+        }
+
+        /* スマホ対応 */
+        @media (max-width: 768px) {
+            .hero-btn {
+                font-size: 1.1rem;
+                padding: 16px 40px;
+                margin: 8px 0;
+            }
+            img {
+                max-height: 520px !important;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ヘッダー -->
+    <header>
+        <div class="logo">高価買取えびすや</div>
+        <p>株式会社Rita 運営</p>
+    </header>
+
+    <!-- ナビゲーション -->
+    <nav>
+        <ul>
+            <li><a href="#hero">トップ</a></li>
+            <li><a href="#service">事業内容</a></li>
+            <li><a href="#contact">お問い合わせ</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <!-- ==================== Heroセクション ==================== -->
+        <section id="hero" style="background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); padding: 60px 15px 50px; position: relative; overflow: hidden;">
             <div style="max-width: 1200px; margin: 0 auto;">
+                
                 <!-- 上部テキスト -->
                 <div style="text-align: center; margin-bottom: 45px;">
                     <div style="display: inline-block; background: #c8102e; color: white; padding: 10px 30px; border-radius: 30px; font-size: 1.15rem; letter-spacing: 2px; margin-bottom: 20px;">
@@ -12,7 +162,7 @@
                     <p style="font-size: clamp(1.3rem, 4.5vw, 1.7rem); color: #222; max-width: 720px; margin: 0 auto 12px auto; line-height: 1.5;">
                         ブランド品・時計・貴金属を<br><strong>安心・高価買取</strong>
                     </p>
-                    <p style="font-size: 1.35rem; color: #c8102e; font-weight: bold; margin: 0;">
+                    <p style="font-size: 1.35rem; color: #c8102e; font-weight: bold; margin: 0 0 30px 0;">
                         催事買取　・　出張買取　・　フランチャイズ募集
                     </p>
                 </div>
@@ -21,22 +171,77 @@
                 <div style="text-align: center; margin: 0 auto; max-width: 1100px;">
                     <img src="Gemini_Generated_Image_cz45nkcz45nkcz45.png" 
                          alt="高価買取えびすや - ブランドバッグ、時計、貴金属などの高級品を高価買取" 
-                         style="width: 100%; height: auto; max-height: 680px; object-fit: contain; border-radius: 16px; box-shadow: 0 25px 50px rgba(0,0,0,0.18); border: 1px solid #eee;">
+                         style="width: 100%; height: auto; max-height: 620px; object-fit: contain; border-radius: 16px; box-shadow: 0 25px 50px rgba(0,0,0,0.18); border: 1px solid #eee;">
                 </div>
 
-                <!-- 下部CTA -->
+                <!-- 下部CTAボタン -->
                 <div style="text-align: center; margin-top: 55px;">
                     <div style="display: flex; gap: 22px; justify-content: center; flex-wrap: wrap;">
-                        <a href="#contact" style="background: #c8102e; color: white; padding: 18px 52px; border-radius: 50px; text-decoration: none; font-weight: bold; font-size: 1.3rem; box-shadow: 0 10px 30px rgba(200,16,46,0.35); transition: all 0.3s;">
-                            お問い合わせ・査定依頼
-                        </a>
-                        <a href="#service" style="background: transparent; color: #c8102e; padding: 18px 52px; border: 2.5px solid #c8102e; border-radius: 50px; text-decoration: none; font-weight: bold; font-size: 1.3rem; transition: all 0.3s;">
-                            事業内容を見る
-                        </a>
+                        <a href="#contact" class="hero-btn hero-btn-primary">お問い合わせ・査定依頼</a>
+                        <a href="#service" class="hero-btn hero-btn-outline">事業内容を見る</a>
                     </div>
                     <p style="margin-top: 25px; color: #555; font-size: 1.05rem;">古物商許可取得手続中</p>
                 </div>
             </div>
         </section>
+        <!-- ==================== Heroセクション 終了 ==================== -->
 
-一度問題がないかの確認をしてください。
+        <!-- ==================== 事業内容セクション ==================== -->
+        <section id="service">
+            <h2 style="text-align: center; font-size: 2.4rem; margin-bottom: 40px;">事業内容</h2>
+            <div class="service-grid">
+                <div class="service-card">
+                    <h3 style="color: #c8102e; margin-top: 0;">催事買取</h3>
+                    <p>全国の催事会場・イベントにて出店。高額査定をその場で実施。</p>
+                </div>
+                <div class="service-card">
+                    <h3 style="color: #c8102e; margin-top: 0;">出張買取</h3>
+                    <p>ご自宅や指定場所までスタッフがお伺いし、丁寧に査定いたします。</p>
+                </div>
+                <div class="service-card">
+                    <h3 style="color: #c8102e; margin-top: 0;">ブランド品買取</h3>
+                    <p>バッグ・財布・服飾など有名ブランド品を高価買取。</p>
+                </div>
+                <div class="service-card">
+                    <h3 style="color: #c8102e; margin-top: 0;">時計買取</h3>
+                    <p>ロレックス・オメガなど高級時計を専門的に高価査定。</p>
+                </div>
+                <div class="service-card">
+                    <h3 style="color: #c8102e; margin-top: 0;">貴金属買取</h3>
+                    <p>金・プラチナ・ダイヤモンドなどの貴金属を適正価格で買取。</p>
+                </div>
+                <div class="service-card">
+                    <h3 style="color: #c8102e; margin-top: 0;">フランチャイズ募集</h3>
+                    <p>「高価買取えびすや」のフランチャイズ加盟店を積極募集しています。</p>
+                </div>
+            </div>
+        </section>
+        <!-- ==================== 事業内容セクション 終了 ==================== -->
+
+        <!-- ==================== お問い合わせセクション ==================== -->
+        <section id="contact">
+            <div class="contact-box">
+                <h2 style="margin-top: 0; font-size: 2.3rem;">お問い合わせ</h2>
+                <p style="font-size: 1.3rem; margin-bottom: 30px;">現在お問い合わせ窓口を準備中です。</p>
+                
+                <div style="max-width: 500px; margin: 0 auto; text-align: left; font-size: 1.1rem;">
+                    <p><strong>電話番号：</strong> 準備中</p>
+                    <p><strong>LINE：</strong> 準備中</p>
+                    <p><strong>Googleフォーム：</strong> 準備中</p>
+                </div>
+                
+                <p style="margin-top: 40px; color: #666;">準備が整い次第、随時情報を更新いたします。</p>
+            </div>
+        </section>
+        <!-- ==================== お問い合わせセクション 終了 ==================== -->
+
+    </main>
+
+    <footer style="background: #333; color: white; text-align: center; padding: 2.5rem 1rem; margin-top: 4rem;">
+        <p>© 株式会社Rita 高価買取えびすや</p>
+        <p>大阪府大阪市北区梅田1-1-3 大阪駅前第3ビル29階1-1-1号室</p>
+    </footer>
+
+</body>
+</html>
+```
